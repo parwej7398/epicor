@@ -1,6 +1,7 @@
 import { CropPortrait, Instagram, LinkedIn, X } from '@mui/icons-material'
 import { Divider, IconButton } from '@mui/material'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -12,7 +13,9 @@ const Footer = () => {
                 <div className='flex justify-between px-36'>
                     <div className='flex flex-col gap-5'>
                         <p className='text-xl'>COMPANY</p>
-                        <p>Careers</p>
+                        <Link to={'https://www.epicor.com/en-in/jobs/'}>
+                            <p>Careers</p>
+                        </Link>
                         <p>Newsroom</p>
                         <p>Locations</p>
                         <p>Contact Sales</p>
@@ -39,10 +42,18 @@ const Footer = () => {
                 </div>
                 <Divider className='!bg-gray-400' />
                 <div className='px-28'>
-                    <IconButton><LinkedIn className='text-white' /></IconButton>
-                    <IconButton><X className='text-white' /></IconButton>
-                    <IconButton><Instagram className='text-white' /></IconButton>
-                    <IconButton><CropPortrait className='text-white' /></IconButton>
+                    <Link to={'https://www.linkedin.com/company/epicor'}>
+                        <IconButton><LinkedIn className='text-white' /></IconButton>
+                    </Link>
+                    <Link to={'https://twitter.com/Epicor?s=20'}>
+                        <IconButton><X className='text-white' /></IconButton>
+                    </Link>
+                    <Link to={'https://www.instagram.com/epicor'}>
+                        <IconButton><Instagram className='text-white' /></IconButton>
+                    </Link>
+                    <Link to={'https://www.glassdoor.co.in/Overview/Working-at-Epicor-Software-EI_IE1421.11,26.htm'}>
+                        <IconButton><CropPortrait className='text-white' /></IconButton>
+                    </Link>
                     <p>© Epicor Software Corporation 2024.</p>
                 </div>
 
