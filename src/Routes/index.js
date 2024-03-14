@@ -1,7 +1,12 @@
+import Auditonix from "../Components/Auditonix";
+import Betco from "../Components/Betco";
 import ContactUs from "../Components/ContactUs";
 import Cybersecurity from "../Components/Cybersecurity";
 import GetSupport from "../Components/GetSupport";
 import GlobalSide from "../Components/GlobalSide";
+import Onoff from "../Components/OnOff";
+import Stephen from "../Components/Stephen";
+import Tuffaloy from "../Components/Tuffaloy";
 import WebinarSeries from "../Components/WebinarSeriesCriticalTechforManufacturers";
 import Benefits from "../Pages/Benefits";
 import Contect from "../Pages/Contect";
@@ -74,8 +79,33 @@ export const routes = [
     element: <Cybersecurity />,
   },
   {
-    id: 12,
+    id: 13,
     path: "/webinar_ceries_critical_tech_for_manufacturers",
     element: <WebinarSeries />,
+  },
+  {
+    id: 14,
+    path: "/auditonix",
+    element: <Auditonix />,
+  },
+  {
+    id: 15,
+    path: "/tuffaloy",
+    element: <Tuffaloy />,
+  },
+  {
+    id: 16,
+    path: "/stephen",
+    element: <Stephen />,
+  },
+  {
+    id: 17,
+    path: "/on_off",
+    element: <Onoff />,
+  },
+  {
+    id: 18,
+    path: "/betco",
+    element: <Betco />,
   },
 ];

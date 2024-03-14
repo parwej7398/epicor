@@ -4,6 +4,7 @@ import tuffaloy from "../../Asset/customer-tuffaloy-logo-dark-gray.png";
 import betco from "../../Asset/customer-betco-logo-dark-gray.png";
 import onoff from "../../Asset/customer-onoff-logo-dark-gray.png";
 import stephen from "../../Asset/customer-stephen-gould-logo-dark-gray.png";
+import visa from "../../Asset/customer-visa-cash-app-dark-gray-logo-landscape.png";
 import { Link } from "react-router-dom";
 
 const Overview = () => {
@@ -13,9 +14,9 @@ const Overview = () => {
   };
   return (
     <>
-      <div id="Overview" className="flex justify-between px-36 p-10">
-        <div className="w-[50%] flex flex-col gap-4">
-          <p className="text-5xl font-semibold">
+      <div id="Overview" className="lg:flex justify-between lg:px-36 p-10">
+        <div className="lg:w-[50%] flex flex-col gap-4">
+          <p className="lg:text-5xl text-xl font-semibold">
             Made With Manufacturers, For Manufacturers
           </p>
           <p className="text-slate-500">
@@ -30,7 +31,7 @@ const Overview = () => {
           </p>
         </div>
 
-        <div className="flex flex-col *:cursor-pointer gap-4 *:border-sky-400 *:border *:p-3 *:rounded-md *:font-semibold">
+        <div className="flex flex-col p-4 *:cursor-pointer gap-4 *:border-sky-400 *:border *:p-3 *:rounded-md *:font-semibold">
           <div className="flex border gap-5 justify-between *:font-semibold items-center">
             <div>
               <Link
@@ -92,12 +93,25 @@ const Overview = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between px-32 p-10">
-        <img src={audiotonixs} alt="" />
-        <img src={tuffaloy} alt="" />
-        <img src={betco} alt="" />
-        <img src={onoff} alt="" />
-        <img src={stephen} alt="" />
+      <div className="lg:flex lg:justify-between grid grid-cols-2 gap-5 lg:px-32 p-10">
+        <Link to={"/auditonix"}>
+          <img src={audiotonixs} alt="" />
+        </Link>
+        <Link to={"/"}>
+          <img src={tuffaloy} alt="" />
+        </Link>
+        <Link to={"/"}>
+          <img src={betco} alt="" />
+        </Link>
+        <Link to={"/"}>
+          <img src={onoff} alt="" />
+        </Link>
+        <Link to={"/"}>
+          <img src={stephen} alt="" />
+        </Link>
+        <Link to={"/"}>
+          <img src={visa} alt="" />
+        </Link>
       </div>
     </>
   );

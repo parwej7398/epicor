@@ -49,52 +49,56 @@ const GetSupport = () => {
   ];
   return (
     <>
-      <div className="flex px-32 mt-32 bg-[#093747] items-center">
-        <div className="flex flex-col w-[60%] gap-7 p-14 text-white bg-[#093747]">
+      <div className="lg:flex lg:px-32 lg:pt-32 bg-[#093747] items-center">
+        <div className="lg:flex lg:flex-col lg:w-[60%] lg:gap-7 p-4 lg:p-14 text-white bg-[#093747]">
           <p>Support</p>
-          <p className="text-5xl font-semibold">We’re Here for You</p>
-          <p className="text-xl">
+          <p className="lg:text-5xl text-xl font-semibold">
+            We’re Here for You
+          </p>
+          <p className="lg:text-xl">
             Get the product knowledge and industry expertise you need to keep
             your business running smoothly. Epicor Support helps you stay on
             track—choose self-service resources or speak with an experienced
             team member.
           </p>
-          <button className="bg-[#e00700] p-2 text-lg rounded-md w-48">
+          <button className="bg-[#e00700] p-2 text-lg rounded-md lg:w-48">
             LOGIN TO EPICCARE
           </button>
         </div>
-        <div className="w-[40%]">
+        <div className="lg:w-[40%] max-lg:hidden">
           <img src={Support} alt="" className="rounded-xl" />
         </div>
       </div>
-      <div key={""} className="flex justify-between px-36 p-10">
-        <div className="flex flex-col w-[60%] gap-7 p-14">
-          <p className="text-5xl font-semibold">24/7 Support</p>
-          <p className="text-lg text-slate-400">
+      <div key={""} className="lg:flex justify-between lg:px-36 lg:p-10 p-4">
+        <div className="flex flex-col p-4 lg:w-[60%] gap-7 lg:p-14">
+          <p className="lg:text-5xl text-2xl font-semibold">24/7 Support</p>
+          <p className="lg:text-lg text-slate-400">
             The award-winning EpicCare support portal is available 24/7,
             empowering you with information and resources on your schedule. Find
             answers easily on your own, and get assistance when you need it.
             EpicCare is your site for self-help resources, account information,
             support case updates, and other productivity-boosting tools.
           </p>
-          <button className="bg-[#327e9c] p-2 rounded-md w-60 text-white">
+          <button className="bg-[#327e9c] p-2 rounded-md lg:w-60 text-white">
             LEARN MORE IN EPICCARE
           </button>
         </div>
-        <div className="w-[40%]">
+        <div className="w-[40%] max-lg:hidden">
           <img src={award} alt="" className="rounded-xl" />
         </div>
       </div>
-      <div className="text-5xl font-semibold px-36 p-10">
+      <div className="lg:text-5xl font-semibold lg:px-36 lg:p-10 p-4">
         <p>Epicor Resources</p>
       </div>
       <div
         key={""}
-        className="grid grid-cols-2 justify-between px-36 p-20 gap-10"
+        className="lg:grid max-lg:flex max-lg:flex-col max-lg:gap-5 lg:grid-cols-2 justify-between lg:px-36 lg:p-20 p-4 gap-10"
       >
         {title.map((event) => (
-          <div className="flex flex-col justify-center gap-6">
-            <p className="text-3xl font-semibold">{event.headding}</p>
+          <div key={""} className="flex flex-col justify-center gap-6">
+            <p className="lg:text-3xl text-2xl font-semibold">
+              {event.headding}
+            </p>
             <p className="text-slate-400">{event.paragraph}</p>
             <Button className="!bg-[#327e9c] !text-white !w-60 !font-semibold !rounded-xl">
               {event.button}
@@ -104,27 +108,27 @@ const GetSupport = () => {
       </div>
       <div className="flex flex-col gap-5 p-10 cursor-pointer">
         <div>
-          <p className="text-5xl font-bold text-center">
+          <p className="lg:text-5xl text-2xl font-bold text-center">
             Frequently Asked Questions
           </p>
         </div>
 
-        <div className="px-36 flex flex-col gap-4">
+        <div className="lg:px-36 flex flex-col gap-4">
           <Accordion className="!p-1" sx={{ borderRadius: "20px" }}>
             <AccordionSummary expandIcon={<ExpandMore />}>
-              <p className="text-xl font-semibold">
+              <p className="lg:text-xl font-semibold">
                 How can I speak to a person?
               </p>
             </AccordionSummary>
             <AccordionDetails>
               <span className="flex flex-col gap-2">
-                <p className="text-lg">
+                <p className="lg:text-lg">
                   Once you’re logged in to EpicCare, you can find support,
                   billing, and contacts for your products. Your plan may include
                   unlimited online, chat and/or phone problem resolution
                   support.
                 </p>
-                <p className="text-lg">
+                <p className="lg:text-lg">
                   If you have already completed the steps above or are still
                   having trouble accessing EpicCare, chat with an account
                   manager or email us at
@@ -134,16 +138,16 @@ const GetSupport = () => {
             </AccordionDetails>
           </Accordion>
         </div>
-        <div className="px-36 flex flex-col gap-4">
+        <div className="lg:px-36 flex flex-col gap-4">
           <Accordion className="!p-1" sx={{ borderRadius: "20px" }}>
             <AccordionSummary expandIcon={<ExpandMore />}>
-              <p className="text-xl font-semibold">
+              <p className="lg:text-xl font-semibold">
                 Where can I find documentation?
               </p>
             </AccordionSummary>
             <AccordionDetails>
               <span className="flex flex-col gap-2">
-                <p className="text-lg">
+                <p className="lg:text-lg">
                   Product documentation is in EpicWeb, where you can search and
                   navigate all of the documentation available for your Epicor
                   solution. Or, if you are signed in to EpicCare, EpicWeb can be
@@ -152,35 +156,35 @@ const GetSupport = () => {
                   still having trouble, contact your Customer Account Manager
                   (CAM) or email us at customercare@epicor.com.
                 </p>
-                <p className="text-lg">
+                <p className="lg:text-lg">
                   Types of documentation you may find for your product in
                   EpicWeb include:
                 </p>
-                <li className="text-lg">Software documentation</li>
-                <li className="text-lg">End user manuals</li>
-                <li className="text-lg">Installation guides</li>
-                <li className="text-lg">User guides</li>
-                <li className="text-lg">API documentation</li>
-                <li className="text-lg">Code reference</li>
-                <li className="text-lg">Developer guide</li>
-                <li className="text-lg">Developer reference</li>
-                <li className="text-lg">On-demand webcast recordings</li>
-                <li className="text-lg">FAQs</li>
-                <li className="text-lg">Access to Epicor Learning Center</li>
+                <li className="lg:text-lg">Software documentation</li>
+                <li className="lg:text-lg">End user manuals</li>
+                <li className="lg:text-lg">Installation guides</li>
+                <li className="lg:text-lg">User guides</li>
+                <li className="lg:text-lg">API documentation</li>
+                <li className="lg:text-lg">Code reference</li>
+                <li className="lg:text-lg">Developer guide</li>
+                <li className="lg:text-lg">Developer reference</li>
+                <li className="lg:text-lg">On-demand webcast recordings</li>
+                <li className="lg:text-lg">FAQs</li>
+                <li className="lg:text-lg">Access to Epicor Learning Center</li>
               </span>
             </AccordionDetails>
           </Accordion>
         </div>
-        <div className="px-36 flex flex-col gap-4">
+        <div className="lg:px-36 flex flex-col gap-4">
           <Accordion className="!p-1" sx={{ borderRadius: "20px" }}>
             <AccordionSummary expandIcon={<ExpandMore />}>
-              <p className="text-xl font-semibold">
+              <p className="lg:text-xl font-semibold">
                 Where can I find software updates?
               </p>
             </AccordionSummary>
             <AccordionDetails>
               <span className="flex flex-col gap-2">
-                <p className="text-lg">
+                <p className="lg:text-lg">
                   Login to EpicWeb for the latest software updates, fixes,
                   enhancements, and upgrades.
                 </p>
@@ -188,16 +192,16 @@ const GetSupport = () => {
             </AccordionDetails>
           </Accordion>
         </div>
-        <div className="px-36 flex flex-col gap-4">
+        <div className="lg:px-36 flex flex-col gap-4">
           <Accordion className="!p-1" sx={{ borderRadius: "20px" }}>
             <AccordionSummary expandIcon={<ExpandMore />}>
-              <p className="text-xl font-semibold">
+              <p className="lg:text-xl font-semibold">
                 What products do you support?
               </p>
             </AccordionSummary>
             <AccordionDetails>
               <span className="flex flex-col gap-2">
-                <p className="text-lg">
+                <p className="lg:text-lg">
                   If you have an Epicor product and an active service plan, we
                   support your product. See a full list of products here.
                 </p>
@@ -205,16 +209,16 @@ const GetSupport = () => {
             </AccordionDetails>
           </Accordion>
         </div>
-        <div className="px-36 flex flex-col gap-4">
+        <div className="lg:px-36 flex flex-col gap-4">
           <Accordion className="!p-1" sx={{ borderRadius: "20px" }}>
             <AccordionSummary expandIcon={<ExpandMore />}>
-              <p className="text-xl font-semibold">
+              <p className="lg:text-xl font-semibold">
                 How can I find my account number?
               </p>
             </AccordionSummary>
             <AccordionDetails>
               <span className="flex flex-col gap-2">
-                <p className="text-lg">
+                <p className="lg:text-lg">
                   Request your account number from the EpicCare log-in page
                   under “Request My Account Number.” If you have an approved
                   email address, you will receive an email with your account
@@ -224,32 +228,32 @@ const GetSupport = () => {
             </AccordionDetails>
           </Accordion>
         </div>
-        <div className="px-36 flex flex-col gap-4">
+        <div className="lg:px-36 flex flex-col gap-4">
           <Accordion className="!p-1" sx={{ borderRadius: "20px" }}>
             <AccordionSummary expandIcon={<ExpandMore />}>
-              <p className="text-xl font-semibold">
+              <p className="lg:text-xl font-semibold">
                 How can I setup single sign-on through Epicor Identity (IdP)?
               </p>
             </AccordionSummary>
             <AccordionDetails>
               <span className="flex flex-col gap-2">
-                <p className="text-lg">
+                <p className="lg:text-lg">
                   Find frequently asked questions about IdP here.
                 </p>
               </span>
             </AccordionDetails>
           </Accordion>
         </div>
-        <div className="px-36  flex flex-col gap-4">
+        <div className="lg:px-36  flex flex-col gap-4">
           <Accordion className="!p-1" sx={{ borderRadius: "20px" }}>
             <AccordionSummary expandIcon={<ExpandMore />}>
-              <p className="text-xl font-semibold">
+              <p className="lg:text-xl font-semibold">
                 How do I register for EpicCare?
               </p>
             </AccordionSummary>
             <AccordionDetails>
               <span className="flex flex-col gap-2">
-                <p className="text-lg">
+                <p className="lg:text-lg">
                   Watch these videos for a detailed walkthrough of requesting a
                   new customer account or service plan. If you need assistance,
                   contact your account manager.
@@ -261,12 +265,14 @@ const GetSupport = () => {
                       src={
                         "https://cf-images.us-east-1.prod.boltdns.net/v1/static/2615230543001/21455f8a-80e9-42dc-a70d-18cf1a998ef8/71fd04f2-ede0-46cf-a3e2-1bf5fca8e736/1280x720/match/image.jpg"
                       }
-                      className="w-[30rem] rounded-xl"
+                      className="w-[30rem] max-lg:hidden rounded-xl"
                     />
                   </div>
                   <div className="flex flex-col gap-4 w-[50%]">
-                    <p className="text-xl">Tutorial: Request a User Account</p>
-                    <p className="text-xl">
+                    <p className="lg:text-xl">
+                      Tutorial: Request a User Account
+                    </p>
+                    <p className="lg:text-xl">
                       Get a step-by-step walk-through to help you complete your
                       new user registration and request an account. You can
                       register here.

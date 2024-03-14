@@ -152,7 +152,7 @@ const GlobalSide = () => {
   ];
   return (
     <div>
-      <div className="px-32 mt-32 items-center">
+      <div className="lg:px-32 mt-32 items-center">
         <div className="flex flex-col gap-7 p-14">
           <p>Global Sites</p>
           <p className="text-5xl font-semibold">Epicor Worldwide</p>
