@@ -13,7 +13,7 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import epicor from "../../Asset/WhatsApp_Image_2024-03-12_at_11.15.44_0b64599e-removebg-preview.png";
+import epicor from "../../Asset/MYGSTBOOK.jpg";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -384,10 +384,10 @@ const Header = () => {
   return (
     <>
       <div className="hidden lg:flex flex-col">
-        <div className="bg-[#022b3bff]  text-white lg:px-[7%] z-50 fixed top-0 w-full">
+        <div className="bg-[#022b3bff]  text-white lg:px-[10%] z-50 fixed top-0 w-full">
           <div className="flex items-center justify-between p-3">
             <div>
-              <img src={epicor} alt="" className="h-8" />
+              <img src={epicor} alt="" className="h-16 w-16 rounded-full" />
             </div>
             <div>
               <Collapse orientation="horizontal" in={open}>

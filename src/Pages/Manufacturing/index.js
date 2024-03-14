@@ -45,7 +45,7 @@ const Manufacturing = () => {
           <img src={manufacturing} alt="" className="size-full " />
         </div>
       </div>
-      <div className="flex lg:justify-center hide-scroll overflow-auto py-2 lg:top-[7.5rem] sticky px-[10%] gap-2 bg-white">
+      <div className="flex lg:justify-center hide-scroll overflow-auto py-2 lg:top-[8.5rem] sticky px-[10%] gap-2 bg-white">
         <button
           className="p-2 px-4 hover:bg-slate-100 hover:rounded-md"
           onClick={() => handleClick("Overview")}
